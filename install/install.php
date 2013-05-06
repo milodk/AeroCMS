@@ -19,6 +19,12 @@
 	Website Database:
 	<p id="subtext">Create an empty database with this name</p>
 	<input type="text" name="dbname">
+	World Database:
+	<input type="text" name="worlddb">
+	Characters Database:
+	<input type="text" name="chardb">
+	Auth Database:
+	<input type="text" name="authdb">
 	<input type="submit" name="Submit" value="Submit Information">
 	</form>
 	
@@ -33,8 +39,12 @@ $dbhost = "'. $_POST["dbhost"]. '";
 $dbuname = "'. $_POST["dbuname"]. '";
 $dbpass = "'. $_POST["dbpass"]. '";
 $dbname = "'. $_POST["dbname"]. '";
+
+$worlddb = "'. $_POST["worlddb"]. '";
+$chardb = "'. $_POST["chardb"]. '";
+$authdb = "'. $_POST["authdb"]. '";
 ?>';
-		$fp = fopen("../config/dbconfig.php", "w");
+		$fp = fopen("../config/config.php", "w");
 		fwrite($fp, $string);
 		fclose($fp);
 		header('Location: install2.php');

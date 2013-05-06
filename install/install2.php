@@ -14,7 +14,7 @@
 	<?php
 	// Create connection
 	define('__ROOT__', dirname(dirname(__FILE__))); 
-	require_once(__ROOT__.'/config/dbconfig.php'); 
+	require_once(__ROOT__.'/config/config.php'); 
 	
 	$con=mysqli_connect($dbhost,$dbuname,$dbpass,$dbname);
 
@@ -53,18 +53,4 @@
 	<p class="footer">Created by Team Aero</p>
 	<div>
 	</div>
-	
-	<?php
-	if (isset($_POST["Submit"])) {
-$string = '<?php
-$dbhost = "'. $_POST["dbhost"]. '";
-$dbuname = "'. $_POST["dbuname"]. '";
-$dbpass = "'. $_POST["dbpass"]. '";
-$dbname = "'. $_POST["dbname"]. '";
-?>';
-		$fp = fopen("../config/dbconfig.php", "w");
-		fwrite($fp, $string);
-		fclose($fp);
-		header('Location: install/install2.php');
-	}?>
 </body>

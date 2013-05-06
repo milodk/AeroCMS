@@ -8,6 +8,17 @@ body
 	text-shadow:1px 1px 0px #000;
 }
 
+a:link, a:visited
+{
+	color:#434749;
+	text-decoration:none;
+}
+
+a:hover
+{
+	color:#a07332;
+}
+
 #container
 {
 	width:1000px;
@@ -17,6 +28,7 @@ body
 
 #header
 {
+	margin-top:200px;
 	height:100px;
 	background-image:url(../images/logo.png);
 	background-repeat:no-repeat;
@@ -30,7 +42,19 @@ body
 #nav
 {
 	overflow:auto;
-	background-color:red;
+	background-image:url(../images/menu.png);
+	height:70px;
+}
+
+#navtext
+{
+	font-size:16px;
+	display:block;
+	font-size:16px;
+	color:#cf9139;
+	border-right:1px solid rgba(14,24,32,0.5);
+	border-left:1px solid rgba(7,7,7,0.5);
+	margin-top:18px;
 }
 
 #nav ul
@@ -50,28 +74,52 @@ body
 #main
 {
 	overflow:auto;
-	margin-top:3px;
 }
 
 #main_left
 {
 	float:left;
 	width:700px;
-	min-height:400px;
+	min-height:600px;
 	display:block;
-	background-color:brown;
+	background-image:url(../images/body_bg.png);
+}
+
+#newstitle
+{
+	background-image:url(../images/main_top.png);
+	height:37px;
+	width:700px;
+	padding-top:10px;
+	text-align:center;
+	color:#cf9139;
+	font-size:18px;
+	display:block;
+}
+
+#newstext
+{
+	padding:15px;
+}
+
+#pagetext
+{
+	padding:15px;
 }
 
 #main_right
 {
 	float:left;
 	width:300px;
-	min-height:400px;
-	background-color:purple;
+	min-height:600px;
+	display:block;
+	height:60;
+	width:300;
+	background-image:url(../images/bodyleft_bg.png);
 }
 
 #footer
 {
-	height:40px;
-	background-color:green;
+	height:67px;
+	background-image:url(../images/footer.png);
 }
