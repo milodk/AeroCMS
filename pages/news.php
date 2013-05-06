@@ -8,9 +8,8 @@
 </head>
 <div id="container">
 
-<div id="header">
-Header
-</div>
+<a href="../pages/news.php"><div id="header">
+</div></a>
 
 <div id="nav">
 
